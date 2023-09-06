@@ -53,13 +53,13 @@ DOWNLOAD_ORIGINAL_URL: Optional[
 # Optional link for downloading original dataset (e.g. "https://some.com/dataset/download")
 
 CLASS2COLOR: Optional[Dict[str, List[str]]] = {
-    "nucleus": [230, 25, 75],
-    "cluster": [60, 180, 75],
-    "nucleus out of focus": [255, 225, 25],
-    "satellite": [0, 130, 200],
-    "overlapped nuclei": [245, 130, 48],
-    "non-viable nucleus": [145, 30, 180],
-    "leukocyte nucleus": [70, 240, 240],
+    "nucleus": [255, 255, 0],
+    "cluster": [0, 255, 0],
+    "nucleus out of focus": [145, 30, 180],
+    "satellite": [0, 0, 255],
+    "overlapped nuclei": [0, 255, 255],
+    "non-viable nucleus": [255, 0, 0],
+    "leukocyte nucleus": [255, 140, 0],
 }
 # If specific colors for classes are needed, fill this dict (e.g. {"class1": [255, 0, 0], "class2": [0, 255, 0]})
 
