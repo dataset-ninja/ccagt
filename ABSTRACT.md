@@ -16,7 +16,7 @@ In version 2, there are a total of 7 categories with added distinctions between 
 
 Each slide can have some differences in the stain coloration, it can be seen that an image created from different images of different slides:
 
-<img src="https://github.com/supervisely/supervisely/assets/78355358/2708d2f0-586e-49ec-8d11-b0464c9eac8c" alt="image" width="800">
+<img src="https://github.com/supervisely/supervisely/assets/78355358/2708d2f0-586e-49ec-8d11-b0464c9eac8c" alt="image" width="400">
 
 9339 images with a resolution of 1600×1200 where each pixel is 0.111µmX0.111µm were obtained from 15 different slides, having at least one label per image. Have more than sixty-three thousand annotations.
 
