@@ -13,53 +13,83 @@ from dataset_tools.templates import (
 ##################################
 # * Before uploading to instance #
 ##################################
-PROJECT_NAME: str = None
-PROJECT_NAME_FULL: str = None
+PROJECT_NAME: str = "CCAgT"
+PROJECT_NAME_FULL: str = "CCAgT: Images of Cervical Cells with AgNOR Stain Technique v2.0"
 HIDE_DATASET = True  # set False when 100% sure about repo quality
 
 ##################################
 # * After uploading to instance ##
 ##################################
-LICENSE: License = None
-APPLICATIONS: List[Union[Industry, Domain, Research]] = None
-CATEGORY: Category = None
+LICENSE: License = License.CC_BY_NC_3_0()
+APPLICATIONS: List[Union[Industry, Domain, Research]] = [Research.Biomedical()]
+CATEGORY: Category = Category.Medical(extra=Category.Biology())
 
-CV_TASKS: List[CVTask] = None
-ANNOTATION_TYPES: List[AnnotationType] = None
+CV_TASKS: List[CVTask] = [
+    CVTask.InstanceSegmentation(),
+    CVTask.SemanticSegmentation(),
+    CVTask.ObjectDetection(),
+]
+ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.InstanceSegmentation()]
 
-RELEASE_DATE: Optional[str] = None  # e.g. "YYYY-MM-DD"
+RELEASE_DATE: Optional[str] = "2022-06-01"  # e.g. "YYYY-MM-DD"
 if RELEASE_DATE is None:
     RELEASE_YEAR: int = None
 
-HOMEPAGE_URL: str = None
+HOMEPAGE_URL: str = "https://data.mendeley.com/datasets/wg4bpm33hj/2"
 # e.g. "https://some.com/dataset/homepage"
 
 PREVIEW_IMAGE_ID: int = None
 # This should be filled AFTER uploading images to instance, just ID of any image.
 
-GITHUB_URL: str = None
+GITHUB_URL: str = "https://github.com/dataset-ninja/ccagt"
 # URL to GitHub repo on dataset ninja (e.g. "https://github.com/dataset-ninja/some-dataset")
 
 ##################################
 ### * Optional after uploading ###
 ##################################
-DOWNLOAD_ORIGINAL_URL: Optional[Union[str, dict]] = None
+DOWNLOAD_ORIGINAL_URL: Optional[
+    Union[str, dict]
+] = "https://prod-dcd-datasets-cache-zipfiles.s3.eu-west-1.amazonaws.com/wg4bpm33hj-2.zip"
 # Optional link for downloading original dataset (e.g. "https://some.com/dataset/download")
 
-CLASS2COLOR: Optional[Dict[str, List[str]]] = None
+CLASS2COLOR: Optional[Dict[str, List[str]]] = {
+    "nucleus": [230, 25, 75],
+    "cluster": [60, 180, 75],
+    "nucleus out of focus": [255, 225, 25],
+    "satellite": [0, 130, 200],
+    "overlapped nuclei": [245, 130, 48],
+    "non-viable nucleus": [145, 30, 180],
+    "leukocyte nucleus": [70, 240, 240],
+}
 # If specific colors for classes are needed, fill this dict (e.g. {"class1": [255, 0, 0], "class2": [0, 255, 0]})
 
 # If you have more than the one paper, put the most relatable link as the first element of the list
 # Use dict key to specify name for a button
-PAPER: Optional[Union[str, List[str], Dict[str, str]]] = None
+PAPER: Optional[Union[str, List[str], Dict[str, str]]] = [
+    "https://ieeexplore.ieee.org/document/9183262",
+    "https://linkinghub.elsevier.com/retrieve/pii/S0895611121000835",
+]
 BLOGPOST: Optional[Union[str, List[str], Dict[str, str]]] = None
-REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = None
+REPOSITORY: Optional[
+    Union[str, List[str], Dict[str, str]]
+] = "https://github.com/johnnv1/CCAgT-utils"
 
-CITATION_URL: Optional[str] = None
-AUTHORS: Optional[List[str]] = None
+CITATION_URL: Optional[str] = "https://data.mendeley.com/datasets/wg4bpm33hj/2"
+AUTHORS: Optional[List[str]] = [
+    "João Gustavo Atkinson Amorim",
+    "André Matias",
+    "Tainee Bottamedi",
+    "Vinícius Sanches",
+    "Ane Francyne Costa",
+    "Fabiana Onofre",
+    "Alexandre Onofre",
+    "Aldo Wangenheim",
+]
 
-ORGANIZATION_NAME: Optional[Union[str, List[str]]] = None
-ORGANIZATION_URL: Optional[Union[str, List[str]]] = None
+ORGANIZATION_NAME: Optional[
+    Union[str, List[str]]
+] = "Universidade Federal de Santa Catarina, Brazil"
+ORGANIZATION_URL: Optional[Union[str, List[str]]] = "https://ufsc.br/"
 
 # Set '__PRETEXT__' or '__POSTTEXT__' as a key with string value to add custom text. e.g. SLYTAGSPLIT = {'__POSTTEXT__':'some text}
 SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = None
