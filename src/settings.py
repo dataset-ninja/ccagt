@@ -72,7 +72,7 @@ PAPER: Optional[Union[str, List[str], Dict[str, str]]] = [
 BLOGPOST: Optional[Union[str, List[str], Dict[str, str]]] = None
 REPOSITORY: Optional[
     Union[str, List[str], Dict[str, str]]
-] = "https://github.com/johnnv1/CCAgT-utils"
+] = {"GitHub":"https://github.com/johnnv1/CCAgT-utils"}
 
 CITATION_URL: Optional[str] = "https://data.mendeley.com/datasets/wg4bpm33hj/2"
 AUTHORS: Optional[List[str]] = [
@@ -85,6 +85,7 @@ AUTHORS: Optional[List[str]] = [
     "Alexandre Onofre",
     "Aldo Wangenheim",
 ]
+AUTHORS_CONTACTS: Optional[List[str]] = ["joao.atkinson@posgrad.ufsc.br", "https://github.com/johnnv1"]
 
 ORGANIZATION_NAME: Optional[
     Union[str, List[str]]
@@ -140,6 +141,7 @@ def get_settings():
     settings["repository"] = REPOSITORY
     settings["citation_url"] = CITATION_URL
     settings["authors"] = AUTHORS
+    settings["authors_contacts"] = AUTHORS_CONTACTS
     settings["organization_name"] = ORGANIZATION_NAME
     settings["organization_url"] = ORGANIZATION_URL
     settings["slytagsplit"] = SLYTAGSPLIT
