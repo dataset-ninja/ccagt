@@ -16,10 +16,6 @@ There are three categories labeled with corresponding classes: *nucleus*, *clust
 
 <span style="font-size: smaller; font-style: italic;">Random AgNOR subimages. Nuclei are labeled with yellow dashes, clusters with green and satellites are denoted by blue dashes. All unlabeled regions were considered to belong to "background class".</span>
 
-<img src="https://github.com/supervisely/supervisely/assets/78355358/b85e1e64-42ce-4f5a-a579-b21b2a1026dd" alt="image" width="400">
-
-<span style="font-size: smaller; font-style: italic;">Random AgNOR subimages. Nuclei are labeled with yellow dashes, clusters with green and satellites are denoted by blue dashes. All unlabeled regions were considered to belong to "background class".</span>
-
 In version 2, there are a total of 7 categories with added distinctions between previous classes: *nucleus out of focus*, *overlapped nuclei*, *non-viable nucleus*, and *leukocyte nucleus*.
 
 Each slide can have some differences in the stain coloration, it can be seen that an image created from different images of different slides:
