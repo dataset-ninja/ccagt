@@ -2,7 +2,7 @@
 
 The dataset consists of 9090 images with 59036 labeled objects belonging to 7 different classes including *nucleus*, *cluster*, *nucleus out of focus*, and other: *satellite*, *leukocyte nucleus*, *non-viable nucleus*, and *overlapped nuclei*.
 
-Images in the CCAgT dataset have pixel-level instance segmentation annotations. Due to the nature of the instance segmentation task, it can be automatically transformed into a semantic segmentation (only one mask for every class) or object detection (bounding boxes for every object) tasks. All images are labeled (i.e. with annotations). There are no pre-defined <i>train/val/test</i> splits in the dataset. The dataset was released in 2022 by the Universidade Federal de Santa Catarina, Brazil.
+Images in the CCAgT dataset have pixel-level instance segmentation annotations. Due to the nature of the instance segmentation task, it can be automatically transformed into a semantic segmentation (only one mask for every class) or object detection (bounding boxes for every object) tasks. All images are labeled (i.e. with annotations). There are no pre-defined <i>train/val/test</i> splits in the dataset. The dataset was released in 2022 by the <span style="font-weight: 600; color: grey; border-bottom: 1px dashed #d3d3d3;">Universidade Federal de Santa Catarina, Brazil</span>.
 
 Here is the visualized example grid with animated annotations:
 
