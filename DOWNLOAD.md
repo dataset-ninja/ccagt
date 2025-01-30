@@ -1,6 +1,6 @@
 Dataset **CCAgT** can be downloaded in [Supervisely format](https://developer.supervisely.com/api-references/supervisely-annotation-json-format):
 
- [Download](https://www.dropbox.com/scl/fi/dqbilbl172q93dlvye348/ccagt-DatasetNinja.tar?rlkey=7grl7vfw1fi32hpb156scuxrj&dl=1)
+ [Download](https://assets.supervisely.com/remote/eyJsaW5rIjogImZzOi8vYXNzZXRzLzE5MDNfQ0NBZ1QvY2NhZ3QtRGF0YXNldE5pbmphLnRhciIsICJzaWciOiAiUUc3V1YySm9SbGVMeUFtUmJ1SndqZ1YyRkNlV2c1MzJ3Q0dnMUd0Nmh3Yz0ifQ==)
 
 As an alternative, it can be downloaded with *dataset-tools* package:
 ``` bash
